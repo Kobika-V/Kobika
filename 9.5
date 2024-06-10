@@ -1,0 +1,20 @@
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def prime_digit_sum(n):
+    prime_digits = [2, 3, 5, 7]
+    total = 0
+    for digit in str(n):
+        if int(digit) in prime_digits:
+            total += int(digit)
+    return total
+
+def christmasDiscount(order_value):
+    return prime_digit_sum(order_value)
+
+    
