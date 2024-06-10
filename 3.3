@@ -1,0 +1,16 @@
+unit=float(input())
+if(unit<199):
+ amt=unit*1.20
+elif(unit>=200 and unit<400):
+    amt=unit*1.50
+elif(unit>=400 and unit<600):
+    amt=unit*1.80
+elif(unit>=600):
+    amt=unit*2.00
+if(amt<100):
+    amt=100
+ 
+if(amt>400):
+    s=15*(amt/100)
+    amt+=s
+print("%.2f"%(amt))
