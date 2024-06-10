@@ -1,0 +1,15 @@
+def insert_into_sorted_array(arr, item):
+    arr.append(item)
+    arr.sort()
+    
+    print(f"ITEM to be inserted:{item}")
+    print("After insertion array is:")
+    for num in arr:
+        print(num)
+
+# Input
+arr = [int(input()) for _ in range(10)]
+item_to_insert = int(input())
+
+# Output
+insert_into_sorted_array(arr, item_to_insert)
