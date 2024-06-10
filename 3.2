@@ -1,0 +1,11 @@
+def get_second_last_digit(num):
+    num = abs(num)
+    
+    if num < 10:
+        return -1
+    else:
+        second_last_digit = (num // 10) % 10
+        return second_last_digit
+num = int(input())
+result = get_second_last_digit(num)
+print(result)
