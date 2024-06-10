@@ -1,0 +1,8 @@
+at_index = email.index('@')
+dot_index = email.index('.')
+username = email[:at_index]
+domain = email[at_index+1:dot_index]
+extension = email[dot_index+1:]
+print(extension)
+print(domain)
+print(username)
