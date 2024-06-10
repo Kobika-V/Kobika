@@ -1,0 +1,12 @@
+def anagram_mapping(A, B):
+    mapping = {num: i for i, num in enumerate(B)}
+    return [mapping[num] for num in A]
+
+# Input
+n = int(input())
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
+
+# Output
+result = anagram_mapping(A, B)
+print(" ".join(map(str, result)))
