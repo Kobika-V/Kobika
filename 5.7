@@ -1,0 +1,19 @@
+def display_unique_words():
+    unique_words = set()
+    input_words = []
+
+    # Read words from the user until a blank line is entered
+    while True:
+        word = input().strip()  # Strip leading/trailing spaces
+        if word == '':  # Check for blank line
+            break
+        if word not in unique_words:  # Check if word is unique
+            unique_words.add(word)
+            input_words.append(word)
+
+    # Display unique words in the order they were entered
+    for word in input_words:
+        print(word)
+
+# Call the function to execute the program
+display_unique_words()
