@@ -1,0 +1,14 @@
+# Function to remove characters from s1 which are present in s2
+def remove_common_characters(s1, s2):
+    # Create a set for faster lookup
+    s2_set = set(s2)
+    # Construct a new string excluding characters present in s2
+    result = ''.join(char for char in s1 if char not in s2_set)
+    return result
+
+# Sample Input
+s1 = input().strip()
+s2 = input().strip()
+
+# Remove common characters and print the result
+print(remove_common_characters(s1, s2))
